@@ -6,6 +6,8 @@ Static site for **review.castalia.institute**: critical three-faculty reviews of
 
 Non-public review EPUBs and the Readest import path are documented in the **bibliotech** repo: [docs/FACULTY_REVIEW_EPUBS.md](https://github.com/InquiryInstitute/bibliotech/blob/main/docs/FACULTY_REVIEW_EPUBS.md).
 
+**Example title:** *The Technological Republic* (ISBN 9780593798706) — uploaded via `npm run upload:local-epub` with `--review`; deep link on the site under **Titles in review**.
+
 ## Publish (GitHub Pages)
 
 1. Create the repository **InquiryInstitute/review** (if it does not exist) and push this tree to `main`.

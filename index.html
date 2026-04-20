@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Review — Castalia Institute</title>
-  <meta name="description" content="Critical three-faculty reviews of books at Castalia Institute." />
+  <meta name="description" content="Joint reviews of important books in several voices — Castalia Institute." />
   <style>
     :root {
       color-scheme: light dark;
@@ -62,6 +62,8 @@
       margin: 0 0 0.75rem;
     }
     p { margin: 0 0 1rem; }
+    ul { margin: 0 0 1rem; padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
     a { color: var(--accent); }
     footer {
       margin-top: 3rem;
@@ -73,46 +75,28 @@
 <body>
   <main>
     <h1>Review</h1>
-    <p class="lede">Critical three-faculty reviews of books — Castalia Institute.</p>
+    <p class="lede">
+      Long-form criticism from Castalia: several voices in dialogue on a single book—
+      with quoted passages and notes, and a published essay that brings the threads together.
+    </p>
     <section>
-      <h2>Workflow with Bibliotech</h2>
-      <p>
-        Review titles use <strong>Bibliotech</strong> for non-public EPUBs: set <code>public_domain = false</code> and
-        <code>review_section = true</code> on the <code>books</code> row, store the file in Supabase Storage, then sign in to
-        <a href="https://bibliotech.castalia.institute/library">Bibliotech Readest</a> and use
-        <em>Import → Import faculty review EPUBs (non-public)</em> to load copies for annotation.
-        Faculty highlights and notes follow the usual Readest / Supabase flow documented in the bibliotech repo.
-        For automated <strong>chapter-by-chapter</strong> passes through <code>ask-faculty</code>, persisting marginalia, and generating the joint article, use the
-        <a href="https://github.com/InquiryInstitute/bibliotech/blob/main/docs/REVIEW_PIPELINE_CHAPTER_ASK_FACULTY.md">review pipeline</a> script in Bibliotech.
-      </p>
-    </section>
-    <section>
-      <h2>Titles in review</h2>
-      <p>
-        Non-public EPUBs live in <a href="https://github.com/InquiryInstitute/bibliotech/blob/main/docs/FACULTY_REVIEW_EPUBS.md">Bibliotech</a>;
-        sign in and open from the library or use Import → faculty review EPUBs.
-      </p>
-      <ul>
-        <li>
-          <cite>The Technological Republic: Hard Power, Soft Belief, and the Future of the West</cite>
-          (Alex Karp, Nicholas W. Thompson; ISBN 9780593798706) —
-          <a href="https://bibliotech.castalia.institute/library?book=2a18c2b7-36ad-4a49-8e9a-f4f3c4b51a50">Bibliotech</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Published reviews</h2>
+      <h2>Essays</h2>
       <ul>
         <li>
           <a href="reviews/the-technological-republic.html"><cite>The Technological Republic</cite></a>
-          — three-faculty synthesis (Plato, Aristotle, Einstein voices);
-          <a href="reviews/the-technological-republic/marginalia/index.html">marginalia by reviewer</a>
+          by Alex Karp and Nicholas W. Thompson — a joint review, with
+          <a href="reviews/the-technological-republic/marginalia/index.html">annotated quotations by voice</a>.
         </li>
       </ul>
     </section>
+    <section>
+      <h2>About this series</h2>
+      <p>
+        Castalia’s reviews treat technology, politics, and culture as questions for the whole person—
+        history, ethics, and imagination read together. New titles appear here as they are finished.
+      </p>
+    </section>
     <footer>
-      <a href="https://bibliotech.castalia.institute/library">Bibliotech</a>
-      ·
       <a href="https://castalia.institute/">Castalia Institute</a>
     </footer>
   </main>

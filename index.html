@@ -75,13 +75,24 @@
     <h1>Review</h1>
     <p class="lede">Critical three-faculty reviews of books — Castalia Institute.</p>
     <section>
-      <h2>Coming soon</h2>
+      <h2>Workflow with Bibliotech</h2>
       <p>
-        This site will publish structured book reviews from three faculty perspectives.
-        Content and listings will appear here as the series goes live.
+        Review titles use <strong>Bibliotech</strong> for non-public EPUBs: set <code>public_domain = false</code> and
+        <code>review_section = true</code> on the <code>books</code> row, store the file in Supabase Storage, then sign in to
+        <a href="https://bibliotech.castalia.institute/library">Bibliotech Readest</a> and use
+        <em>Import → Import faculty review EPUBs (non-public)</em> to load copies for annotation.
+        Faculty highlights and notes follow the usual Readest / Supabase flow documented in the bibliotech repo.
+      </p>
+    </section>
+    <section>
+      <h2>Published reviews</h2>
+      <p>
+        Finished three-faculty pieces will appear here as the series goes live.
       </p>
     </section>
     <footer>
+      <a href="https://bibliotech.castalia.institute/library">Bibliotech</a>
+      ·
       <a href="https://castalia.institute/">Castalia Institute</a>
     </footer>
   </main>

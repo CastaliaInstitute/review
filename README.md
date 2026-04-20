@@ -2,6 +2,10 @@
 
 Static site for **review.castalia.institute**: critical three-faculty reviews of books, published with [GitHub Pages](https://pages.github.com/).
 
+## Bibliotech (source EPUBs + annotations)
+
+Non-public review EPUBs and the Readest import path are documented in the **bibliotech** repo: [docs/FACULTY_REVIEW_EPUBS.md](https://github.com/InquiryInstitute/bibliotech/blob/main/docs/FACULTY_REVIEW_EPUBS.md).
+
 ## Publish (GitHub Pages)
 
 1. Create the repository **InquiryInstitute/review** (if it does not exist) and push this tree to `main`.

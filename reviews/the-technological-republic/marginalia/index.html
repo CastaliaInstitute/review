@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marginalia — Castalia Review</title>
+  <style>
+:root {
+  color-scheme: light dark;
+  --ink: #1a1a1a;
+  --muted: #5c5c5c;
+  --line: rgba(0,0,0,.12);
+  --bg: #faf9f7;
+  --accent: #2c5282;
+  --quote-bg: rgba(0,0,0,.04);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8e6e3;
+    --muted: #9a9690;
+    --line: rgba(255,255,255,.14);
+    --bg: #121110;
+    --accent: #90cdf4;
+    --quote-bg: rgba(255,255,255,.06);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; background: var(--bg); color: var(--ink); line-height: 1.65; }
+main { max-width: 40rem; margin: 0 auto; padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 4vw, 1.75rem); }
+nav.top { font-size: 0.9rem; color: var(--muted); margin-bottom: 2rem; font-family: system-ui, sans-serif; }
+nav.top a { color: var(--accent); }
+h1 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 600; margin: 0 0 0.35rem; }
+.sub { color: var(--muted); margin: 0 0 2rem; font-size: 1.05rem; }
+article { border-top: 1px solid var(--line); padding: 1.35rem 0; }
+.loc { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 0.5rem; }
+blockquote.book {
+  margin: 0 0 1rem;
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--quote-bg);
+  font-style: italic;
+}
+.comment { margin: 0; }
+ul.toc { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+ul.toc li { margin: 0.5rem 0; }
+</style>
+</head>
+<body>
+  <main>
+    <nav class="top"><a href="https://review.castalia.institute/">Review</a> · <a href="../the-technological-republic.html">The Technological Republic: Hard Power, Soft Belief, and the Future of the West</a> · <strong>Marginalia</strong></nav>
+    <h1>Marginalia</h1>
+    <p class="sub">The Technological Republic: Hard Power, Soft Belief, and the Future of the West</p>
+    <p>Quoted passages from the book and each reviewer's marginal comment (from the Bibliotech review pipeline).</p>
+<ul class="toc"><li><a href="./a.einstein.html">Albert Einstein</a> <span style="color:var(--muted)">(a.einstein)</span></li>
+<li><a href="./a.plato.html">Plato</a> <span style="color:var(--muted)">(a.plato)</span></li></ul>
+  </main>
+</body>
+</html>

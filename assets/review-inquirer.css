@@ -6,6 +6,10 @@
   --review-surface: #fffef9;
   --review-border: #ddd;
   --review-after-bg: #f4f1ea;
+  /* Inline marginalia superscripts: muted, not “hyperlink blue” */
+  --review-marginalia-ref: #5a6368;
+  --review-marginalia-ref-hover: #2a2f32;
+  --review-marginalia-ref-border: rgba(44, 95, 124, 0.22);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +20,9 @@
     --review-surface: #121110;
     --review-border: rgba(255, 255, 255, 0.14);
     --review-after-bg: #1a1917;
+    --review-marginalia-ref: #b0aba3;
+    --review-marginalia-ref-hover: #e8e6e3;
+    --review-marginalia-ref-border: rgba(232, 230, 227, 0.22);
   }
 }
 
@@ -176,7 +183,7 @@ body.review-inquirer-page {
   text-decoration-thickness: 1px;
 }
 
-/* Inline superscript links to marginalia anchors (synthesis may emit raw HTML) */
+/* Inline superscript links to marginalia anchors (synthesis / render emit raw HTML) */
 .review-main-body sup,
 .review-afterword-body sup {
   font-size: 0.72em;
@@ -184,33 +191,21 @@ body.review-inquirer-page {
   vertical-align: super;
 }
 
-.review-main-body sup a.review-marginalia-ref,
-.review-afterword-body sup a.review-marginalia-ref {
+/* Any marginalia cite link (with or without <sup>); beat UA :link/:visited blue */
+.review-main-body a.review-marginalia-ref:link,
+.review-main-body a.review-marginalia-ref:visited,
+.review-afterword-body a.review-marginalia-ref:link,
+.review-afterword-body a.review-marginalia-ref:visited {
   font-weight: 600;
-  color: var(--review-accent);
+  color: var(--review-marginalia-ref);
   text-decoration: none;
-  border-bottom: 1px solid rgba(44, 95, 124, 0.35);
+  border-bottom: 1px solid var(--review-marginalia-ref-border);
 }
 
-.review-main-body sup a.review-marginalia-ref:hover,
-.review-afterword-body sup a.review-marginalia-ref:hover {
-  color: var(--review-ink);
-  border-bottom-color: var(--review-ink);
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Superscript marginalia refs: muted stone, not bright “link blue” */
-  .review-main-body sup a.review-marginalia-ref,
-  .review-afterword-body sup a.review-marginalia-ref {
-    color: #b0aba3;
-    border-bottom-color: rgba(232, 230, 227, 0.22);
-  }
-
-  .review-main-body sup a.review-marginalia-ref:hover,
-  .review-afterword-body sup a.review-marginalia-ref:hover {
-    color: var(--review-ink);
-    border-bottom-color: rgba(232, 230, 227, 0.42);
-  }
+.review-main-body a.review-marginalia-ref:hover,
+.review-afterword-body a.review-marginalia-ref:hover {
+  color: var(--review-marginalia-ref-hover);
+  border-bottom-color: var(--review-marginalia-ref-hover);
 }
 
 /* ### in voce … faculty / book headings (Inquirer-style) */

@@ -116,18 +116,30 @@ body.review-inquirer-page {
   margin: 1.75rem 0 0.65rem;
 }
 
-/* Faculty reviewer headings (### a.plato): sans + phrase + optional Marginalia link */
+/* Faculty reviewer headings (### a.plato): sans + phrase; Marginalia link on its own line below */
 .review-main-body h3[id^="a."],
 .review-afterword-body h3[id^="a."] {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.35rem 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-variant: normal;
   font-feature-settings: normal;
   text-transform: none;
   letter-spacing: 0.05em;
+}
+
+.review-main-body h3 .review-faculty-marginalia-line,
+.review-afterword-body h3 .review-faculty-marginalia-line {
+  display: block;
+  width: 100%;
+  margin-top: 0.1rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--review-ink);
 }
 
 .review-main-body h3 .review-in-voce-phrase em,
@@ -145,16 +157,19 @@ body.review-inquirer-page {
 
 .review-main-body h3 .review-faculty-marginalia-link,
 .review-afterword-body h3 .review-faculty-marginalia-link {
-  font-size: 0.88rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  color: var(--review-accent);
-  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .review-main-body h3 .review-faculty-marginalia-link:hover,
 .review-afterword-body h3 .review-faculty-marginalia-link:hover {
-  text-decoration: underline;
+  color: var(--review-ink);
+  text-decoration-thickness: 1px;
 }
 
 /* ### in voce … faculty / book headings (Inquirer-style) */

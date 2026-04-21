@@ -16,6 +16,8 @@ Static HTML under `reviews/<slug>/marginalia/` lists **book quotations** and eac
 
 See [REVIEW_PIPELINE_CHAPTER_ASK_FACULTY.md](https://github.com/InquiryInstitute/bibliotech/blob/main/docs/REVIEW_PIPELINE_CHAPTER_ASK_FACULTY.md) in bibliotech.
 
+Published essay pages use **`assets/review-inquirer.css`** (typography aligned with [The Inquirer](https://inquirer.castalia.institute/)). Regenerate HTML with **`npm run review:render-html`** in bibliotech.
+
 ## Publish (GitHub Pages)
 
 1. Create the repository **InquiryInstitute/review** (if it does not exist) and push this tree to `main`.

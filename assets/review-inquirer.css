@@ -1,0 +1,153 @@
+/* Castalia Review — typography aligned with inquirer.castalia.institute articles */
+:root {
+  --review-ink: #1a1a1a;
+  --review-muted: #555;
+  --review-accent: #2c5f7c;
+  --review-surface: #fffef9;
+  --review-border: #ddd;
+  --review-after-bg: #f4f1ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --review-ink: #e8e6e3;
+    --review-muted: #9a9690;
+    --review-accent: #7eb8d8;
+    --review-surface: #121110;
+    --review-border: rgba(255, 255, 255, 0.14);
+    --review-after-bg: #1a1917;
+  }
+}
+
+body.review-inquirer-page {
+  margin: 0;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.62;
+  color: var(--review-ink);
+  background: var(--review-surface);
+}
+
+.review-inquirer-document {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem clamp(1rem, 4vw, 2rem) 4rem;
+}
+
+.review-site-banner {
+  font-family: "Spectral SC", "Palatino Linotype", Palatino, serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--review-muted);
+  margin-bottom: 0.35rem;
+}
+
+.review-site-banner a {
+  color: var(--review-accent);
+  text-decoration: none;
+}
+
+.review-site-banner a:hover {
+  text-decoration: underline;
+}
+
+.review-article-header {
+  border-bottom: 2px solid var(--review-accent);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.review-article-header h1 {
+  font-family: "Cinzel Decorative", "Cinzel", Palatino, serif;
+  font-weight: 700;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  line-height: 1.2;
+  color: var(--review-accent);
+  margin: 0 0 0.5rem;
+}
+
+.review-article-dek {
+  font-size: 1.05rem;
+  color: var(--review-muted);
+  margin: 0;
+}
+
+.review-main-body h2,
+.review-main-body h3 {
+  font-family: "Spectral SC", Palatino, serif;
+  font-weight: 600;
+  color: var(--review-ink);
+}
+
+.review-main-body h2 {
+  font-size: 1.45rem;
+  margin: 2.25rem 0 0.85rem;
+}
+
+.review-main-body h3 {
+  font-size: 1.2rem;
+  margin: 1.75rem 0 0.65rem;
+}
+
+.review-main-body p {
+  margin: 0 0 1rem;
+}
+
+.review-main-body blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem 0.75rem 1.15rem;
+  border-left: 4px solid var(--review-accent);
+  background: rgba(44, 95, 124, 0.06);
+  font-style: italic;
+}
+
+.review-main-body ul,
+.review-main-body ol {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+}
+
+.review-afterword {
+  margin-top: 3.5rem;
+  padding: 2rem 1.35rem 2.25rem;
+  background: var(--review-after-bg);
+  border: 1px solid var(--review-border);
+  border-radius: 2px;
+}
+
+.review-afterword h2 {
+  font-family: "Spectral SC", Palatino, serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--review-accent);
+  margin: 0 0 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--review-border);
+}
+
+.review-afterword .review-afterword-body h1,
+.review-afterword .review-afterword-body h2,
+.review-afterword .review-afterword-body h3 {
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.2rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.review-afterword .review-afterword-body p {
+  margin: 0 0 0.9rem;
+}
+
+.review-footer-nav {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--review-border);
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--review-muted);
+}
+
+.review-footer-nav a {
+  color: var(--review-accent);
+}

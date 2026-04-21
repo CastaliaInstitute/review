@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Castalia Review — polyphonic review essays | Castalia Institute</title>
-  <meta name="description" content="Castalia Review slows judgment on books that bear on civilization, technology, and public life: polyphonic review essays, quoted marginalia, custodian of record, and synthesis—published as a distinct review series of Castalia Institute." />
+  <title>Castalia Review | Castalia Institute</title>
+  <meta name="description" content="Castalia Review restores slow, accountable judgment on books that bear on civilization through essay, marginalia, and reply." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://review.castalia.institute/" />
   <link rel="alternate" hreflang="en" href="https://review.castalia.institute/" />
   <link rel="alternate" hreflang="x-default" href="https://review.castalia.institute/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Castalia Review" />
-  <meta property="og:title" content="Castalia Review — polyphonic review essays | Castalia Institute" />
-  <meta property="og:description" content="When criticism is too fast, partisan, or market-shaped, Castalia Review stages multiple lenses on one book, anchors debate in the text, and publishes accountable synthesis." />
+  <meta property="og:title" content="Castalia Review | Castalia Institute" />
+  <meta property="og:description" content="Most criticism is too fast, partisan, or narrow. Castalia Review restores judgment through essay, marginalia, and reply." />
   <meta property="og:url" content="https://review.castalia.institute/" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Castalia Review — polyphonic review essays | Castalia Institute" />
-  <meta name="twitter:description" content="Polyphonic review essays from Castalia Institute: slower judgment on books that matter, with marginalia and custodian of record." />
+  <meta name="twitter:title" content="Castalia Review | Castalia Institute" />
+  <meta name="twitter:description" content="Castalia Review restores judgment through close reading, multiple voices, and accountable synthesis." />
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://review.castalia.institute/#website","name":"Castalia Review","url":"https://review.castalia.institute/","description":"Review series of Castalia Institute: long-form polyphonic book criticism with marginalia and custodian of record.","publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"}},{"@type":"WebPage","@id":"https://review.castalia.institute/#webpage","url":"https://review.castalia.institute/","name":"Castalia Review","description":"Slower, multi-voiced judgment on books at the intersection of technology, politics, and civilization—synthesis answerable to the text.","isPartOf":{"@id":"https://review.castalia.institute/#website"},"publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"},"mainEntity":{"@type":"ItemList","name":"Published reviews","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"The Technological Republic: Hard Power, Soft Belief, and the Future of the West","url":"https://review.castalia.institute/reviews/the-technological-republic.html"}]}}]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://review.castalia.institute/#website","name":"Castalia Review","url":"https://review.castalia.institute/","description":"A publication of Castalia Institute: close reading and accountable synthesis through essay, marginalia, and reply.","publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"}},{"@type":"WebPage","@id":"https://review.castalia.institute/#webpage","url":"https://review.castalia.institute/","name":"Castalia Review","description":"Most contemporary criticism is too fast, too partisan, or too narrow to judge works that bear on civilization.","isPartOf":{"@id":"https://review.castalia.institute/#website"},"publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"},"mainEntity":{"@type":"ItemList","name":"Published reviews","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"The Technological Republic","url":"https://review.castalia.institute/reviews/the-technological-republic.html"}]}}]}
   </script>
   <style>
     :root {
@@ -56,17 +56,24 @@
       font-size: clamp(1.75rem, 4vw, 2.25rem);
       font-weight: 600;
       letter-spacing: -0.02em;
-      margin: 0 0 0.5rem;
+      margin: 0 0 0.25rem;
     }
-    .manifesto {
+    .volume {
+      margin: 0 0 1.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-family: system-ui, sans-serif;
+    }
+    .doctrine {
       font-size: 1.08rem;
       margin: 0 0 1rem;
       max-width: 36rem;
     }
-    .lede {
+    .mission {
       font-size: 1.05rem;
-      color: var(--muted);
-      margin: 0 0 2rem;
+      margin: 0;
     }
     section {
       border-top: 1px solid var(--line);
@@ -85,53 +92,32 @@
     ul { margin: 0 0 1rem; padding-left: 1.25rem; }
     li { margin: 0.35rem 0; }
     a { color: var(--accent); }
-    .how-list {
-      list-style: none;
-      padding-left: 0;
-      margin: 0 0 1rem;
-    }
-    .how-list li {
-      margin: 0 0 0.85rem;
-      padding-left: 0;
-    }
-    .how-list strong {
-      display: block;
-      font-size: 0.92rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-family: system-ui, sans-serif;
-      color: var(--muted);
+    .essay-title {
+      margin: 0;
+      font-size: 1.18rem;
       font-weight: 600;
-      margin-bottom: 0.2rem;
     }
-    .forthcoming-status {
-      font-family: system-ui, sans-serif;
-      font-size: 0.8rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+    .essay-summary {
       color: var(--muted);
-      margin-left: 0.35rem;
+      margin: 0.35rem 0 0.5rem;
+    }
+    .essay-link {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .movement-list {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+    }
+    .movement-list li {
+      margin: 0.5rem 0;
     }
     .editor-note {
       border-left: 3px solid var(--line);
       padding: 0.15rem 0 0.15rem 1.1rem;
-      margin: 0 0 1.25rem;
-      color: var(--ink);
-    }
-    .editor-note > p {
-      margin: 0 0 0.75rem;
-    }
-    .editor-note .sig {
-      display: block;
-      margin-top: 0.65rem;
-      font-size: 0.95rem;
-      color: var(--muted);
-      font-style: italic;
-    }
-    .cadence {
-      font-size: 0.98rem;
-      color: var(--muted);
-      margin: 0 0 1rem;
+      margin: 0;
     }
     footer {
       margin-top: 2.5rem;
@@ -144,97 +130,61 @@
 <body>
   <main>
     <h1>Castalia Review</h1>
-    <p class="manifesto">
-      Contemporary criticism is often too fast, too partisan, too market-shaped, or too specialized to judge books that bear on civilization, technology, and public life.
-      <strong>Castalia Review</strong> exists to slow judgment down: we stage several disciplined lenses on one work, anchor disagreement in quotation and marginal comment, and publish a custodial synthesis answerable to both the book and the reader.
+    <p class="volume">Volume I · Spring 2026</p>
+    <p class="doctrine">
+      Most contemporary criticism is too fast, too partisan, or too narrow to judge works that bear on civilization.
     </p>
-    <p class="lede">
-      Each essay is thesis-driven and long-form—closer to a review essay crossed with a symposium and an editorial edition than to a hot take or a transcript. A custodian introduces the stakes; faculty sections (headed <em>in voce</em>) argue with the argument; marginalia ties notes to the author’s sentences; an afterword can gather threads or let the book answer back.
+    <p class="mission">
+      Castalia Review exists to restore judgment. We read closely, respond in multiple voices, and accept responsibility for synthesis.
+      Each review is not a reaction, but a considered act of understanding.
     </p>
-
-    <section aria-labelledby="editors-note-h">
-      <h2 id="editors-note-h">Editor’s note</h2>
-      <div class="editor-note">
-        <p>
-          The point is not polyphony for its own sake. It is accountable judgment: readers should see <em>why</em> a verdict forms, which passages drove it, and where honest readers split.
-          Castalia Review is the Institute’s dedicated venue for that kind of book-length seriousness—published on its own pages, edited to a single standard, and meant to reward return reading.
-        </p>
-        <span class="sig">— Castalia Review</span>
-      </div>
-      <p class="cadence">
-        New reviews appear when a title clears the same editorial bar as the first—not on a newsroom clock.
-        We list work in the pipeline below so the series reads as an organ of the Institute, not a one-off experiment.
-      </p>
-    </section>
-
-    <section>
-      <h2>How a Castalia Review works</h2>
-      <ul class="how-list">
-        <li>
-          <strong>1 · Overview essay</strong>
-          The custodian introduces the work and sets the stakes before the faculty sections open.
-        </li>
-        <li>
-          <strong>2 · Faculty marginalia</strong>
-          Named reviewers annotate the book passage by passage; superscripts in the essay jump to those notes.
-        </li>
-        <li>
-          <strong>3 · Synthesis and afterword</strong>
-          The voices converge or diverge openly; the afterword gathers threads or lets the book answer back.
-        </li>
-      </ul>
-      <p>
-        <a href="about.html">How a review works</a> — passages, marginalia, <em>in voce</em> faculty voices, custodian of record, synthesis.
-      </p>
-    </section>
 
     <section>
       <h2>Essays</h2>
-      <ul>
-        <li>
-          <a href="reviews/the-technological-republic.html"><cite>The Technological Republic</cite></a>
-          by Alex Karp and Nicholas W. Thompson — joint review with
-          <a href="reviews/the-technological-republic/marginalia/index.html">marginalia by reviewer</a>.
-        </li>
+      <p class="essay-title"><cite>The Technological Republic</cite></p>
+      <p class="essay-summary">A review in three movements: essay, marginalia, and reply.</p>
+      <p><a class="essay-link" href="reviews/the-technological-republic.html">→ Read Review</a></p>
+    </section>
+
+    <section>
+      <h2>How a Review Works</h2>
+      <p>Each review proceeds in three movements:</p>
+      <ul class="movement-list">
+        <li><strong>Essay</strong> — a synthetic account of the work</li>
+        <li><strong>Marginalia</strong> — annotated passages with faculty voices (<em>in voce</em>)</li>
+        <li><strong>Reply</strong> — final synthesis under a single author of record</li>
       </ul>
     </section>
 
     <section>
       <h2>Forthcoming</h2>
-      <p>
-        Placeholders mark the pipeline; titles and dates are announced when contracts, custodianship, and faculty assignments are firm.
-      </p>
       <ul>
-        <li>
-          Castalia Review №2 — nonfiction at the intersection of technology, institutions, and public life
-          <span class="forthcoming-status">In editorial preparation</span>
-        </li>
-        <li>
-          Castalia Review №3 — working scope: science, ethics, and collective belief
-          <span class="forthcoming-status">Commissioning</span>
-        </li>
-        <li>
-          Additional essays in the series
-          <span class="forthcoming-status">Pipeline</span>
-        </li>
+        <li><cite>The Status Game</cite> — under review</li>
+        <li><cite>Seeing Like a State</cite> — in preparation</li>
+        <li><cite>The Beginning of Infinity</cite> — proposed</li>
       </ul>
     </section>
 
     <section>
-      <h2>Where this sits in Castalia</h2>
+      <h2>Editorial Note</h2>
+      <p class="editor-note">
+        Criticism has become either immediate or specialized. It rarely accepts responsibility for judgment.
+        <br /><br />
+        Castalia Review proceeds differently. It stages multiple intelligences in dialogue, but does not leave conclusions unresolved.
+        Each review culminates in a synthesis for which a Custodian is accountable.
+      </p>
+    </section>
+
+    <section>
+      <h2>About</h2>
       <p>
-        <a href="https://castalia.institute/">Castalia Institute</a> is the publisher: membership, colleges, tools, and the broader “liberal inquiry” mission live there.
-        <a href="https://inquirer.castalia.institute/">The Inquirer</a> is the Institute’s periodical voice—essays, inquiry, and news of the house.
-        <strong>Castalia Review</strong> is a distinct <strong>review series</strong> (a journal strand, not a column inside <em>The Inquirer</em>): each installment is a single long-form treatment of one book, with its own URL, custodian of record, and marginalia apparatus.
+        A publication of <a href="https://castalia.institute/">Castalia Institute</a><br />
+        In dialogue with <a href="https://inquirer.castalia.institute/">The Inquirer</a>
       </p>
     </section>
 
     <footer>
-      <p>
-        <a href="about.html">How a review works</a>
-        · <a href="https://inquirer.castalia.institute/">The Inquirer</a>
-        · <a href="https://castalia.institute/">Castalia Institute</a>
-      </p>
+      <p>Published quarterly, or as judgment requires.</p>
     </footer>
   </main>
   <script src="/castalia-chrome/inject.js" defer></script>

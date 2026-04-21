@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /castalia-chrome/
 
 Sitemap: https://review.castalia.institute/sitemap.xml

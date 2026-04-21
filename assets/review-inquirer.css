@@ -74,6 +74,31 @@ body.review-inquirer-page {
   margin: 0;
 }
 
+.review-custodian-byline {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--review-border);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.review-custodian-name {
+  display: block;
+  font-family: "Spectral SC", Palatino, serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--review-ink);
+}
+
+.review-custodian-role {
+  display: block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--review-muted);
+  margin-top: 0.25rem;
+}
+
 .review-main-body h2,
 .review-main-body h3 {
   font-family: "Spectral SC", Palatino, serif;
@@ -89,6 +114,23 @@ body.review-inquirer-page {
 .review-main-body h3 {
   font-size: 1.2rem;
   margin: 1.75rem 0 0.65rem;
+}
+
+/* ### in voce … faculty / book headings (Inquirer-style) */
+.review-main-body h3.in-voce-heading,
+.review-afterword-body h3.in-voce-heading {
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: lowercase;
+  color: var(--review-muted);
+  margin-top: 2.25rem;
+}
+
+.review-main-body h3.in-voce-heading + *,
+.review-afterword-body h3.in-voce-heading + * {
+  margin-top: 0.65rem;
 }
 
 .review-main-body p {

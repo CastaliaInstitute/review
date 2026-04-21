@@ -116,9 +116,13 @@ body.review-inquirer-page {
   margin: 1.75rem 0 0.65rem;
 }
 
-/* Faculty reviewer headings (### a.plato): sans + phrase; Marginalia link on its own line below */
+/* Faculty reviewer headings: phrase on first line; Marginalia link below in smaller type */
 .review-main-body h3[id^="a."],
-.review-afterword-body h3[id^="a."] {
+.review-afterword-body h3[id^="a."],
+.review-main-body h3.in-voce-heading:has(.review-faculty-marginalia-line),
+.review-afterword-body h3.in-voce-heading:has(.review-faculty-marginalia-line),
+.review-main-body h3[id^="in-voce-a."],
+.review-afterword-body h3[id^="in-voce-a."] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -134,12 +138,12 @@ body.review-inquirer-page {
 .review-afterword-body h3 .review-faculty-marginalia-line {
   display: block;
   width: 100%;
-  margin-top: 0.1rem;
-  font-size: 0.78rem;
+  margin-top: 0.15rem;
+  font-size: 0.68rem;
   line-height: 1.35;
   font-weight: 400;
   letter-spacing: 0.02em;
-  color: var(--review-ink);
+  color: var(--review-muted);
 }
 
 .review-main-body h3 .review-in-voce-phrase em,
@@ -170,6 +174,43 @@ body.review-inquirer-page {
 .review-afterword-body h3 .review-faculty-marginalia-link:hover {
   color: var(--review-ink);
   text-decoration-thickness: 1px;
+}
+
+/* Inline superscript links to marginalia anchors (synthesis may emit raw HTML) */
+.review-main-body sup,
+.review-afterword-body sup {
+  font-size: 0.72em;
+  line-height: 0;
+  vertical-align: super;
+}
+
+.review-main-body sup a.review-marginalia-ref,
+.review-afterword-body sup a.review-marginalia-ref {
+  font-weight: 600;
+  color: var(--review-accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 95, 124, 0.35);
+}
+
+.review-main-body sup a.review-marginalia-ref:hover,
+.review-afterword-body sup a.review-marginalia-ref:hover {
+  color: var(--review-ink);
+  border-bottom-color: var(--review-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Superscript marginalia refs: muted stone, not bright “link blue” */
+  .review-main-body sup a.review-marginalia-ref,
+  .review-afterword-body sup a.review-marginalia-ref {
+    color: #b0aba3;
+    border-bottom-color: rgba(232, 230, 227, 0.22);
+  }
+
+  .review-main-body sup a.review-marginalia-ref:hover,
+  .review-afterword-body sup a.review-marginalia-ref:hover {
+    color: var(--review-ink);
+    border-bottom-color: rgba(232, 230, 227, 0.42);
+  }
 }
 
 /* ### in voce … faculty / book headings (Inquirer-style) */

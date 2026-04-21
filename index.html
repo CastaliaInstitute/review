@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Castalia Review — multi-voice book criticism | Castalia Institute</title>
-  <meta name="description" content="Castalia Review publishes long-form, multi-voice book criticism: several faculty personas in dialogue on a single title, with quoted marginalia and a book-voice afterword. A series of Castalia Institute." />
+  <title>Castalia Review — polyphonic review essays | Castalia Institute</title>
+  <meta name="description" content="Castalia Review publishes polyphonic review essays: several disciplined voices on one book, quoted marginalia, and synthesis—because civilizational questions deserve slower judgment than the usual review cycle." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://review.castalia.institute/" />
   <link rel="alternate" hreflang="en" href="https://review.castalia.institute/" />
   <link rel="alternate" hreflang="x-default" href="https://review.castalia.institute/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Castalia Review" />
-  <meta property="og:title" content="Castalia Review — multi-voice book criticism | Castalia Institute" />
-  <meta property="og:description" content="Castalia Review publishes long-form, multi-voice book criticism: several faculty personas in dialogue on a single title, with quoted marginalia and a book-voice afterword. A series of Castalia Institute." />
+  <meta property="og:title" content="Castalia Review — polyphonic review essays | Castalia Institute" />
+  <meta property="og:description" content="Polyphonic review essays from Castalia: several voices in dialogue on a single book, with quoted marginalia and synthesis—for readers who want judgment, not hot takes." />
   <meta property="og:url" content="https://review.castalia.institute/" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Castalia Review — multi-voice book criticism | Castalia Institute" />
-  <meta name="twitter:description" content="Castalia Review publishes long-form, multi-voice book criticism: several faculty personas in dialogue on a single title, with quoted marginalia and a book-voice afterword. A series of Castalia Institute." />
+  <meta name="twitter:title" content="Castalia Review — polyphonic review essays | Castalia Institute" />
+  <meta name="twitter:description" content="Polyphonic review essays from Castalia: several voices in dialogue on a single book, with quoted marginalia and synthesis." />
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://review.castalia.institute/#website","name":"Castalia Review","url":"https://review.castalia.institute/","description":"Multi-voice book criticism from Castalia Institute.","publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"}},{"@type":"WebPage","@id":"https://review.castalia.institute/#webpage","url":"https://review.castalia.institute/","name":"Castalia Review","description":"Long-form criticism from Castalia: several voices in dialogue on a single book—with quoted passages and notes, and a published essay that brings the threads together.","isPartOf":{"@id":"https://review.castalia.institute/#website"},"publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"},"mainEntity":{"@type":"ItemList","name":"Published reviews","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"The Technological Republic: Hard Power, Soft Belief, and the Future of the West","url":"https://review.castalia.institute/reviews/the-technological-republic.html"}]}}]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://review.castalia.institute/#website","name":"Castalia Review","url":"https://review.castalia.institute/","description":"Polyphonic review essays and civilizational criticism from Castalia Institute.","publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"}},{"@type":"WebPage","@id":"https://review.castalia.institute/#webpage","url":"https://review.castalia.institute/","name":"Castalia Review","description":"Long-form polyphonic book criticism: several voices in dialogue on a single title, quoted marginalia, and a synthetic essay.","isPartOf":{"@id":"https://review.castalia.institute/#website"},"publisher":{"@type":"Organization","name":"Castalia Institute","url":"https://castalia.institute/"},"mainEntity":{"@type":"ItemList","name":"Published reviews","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"The Technological Republic: Hard Power, Soft Belief, and the Future of the West","url":"https://review.castalia.institute/reviews/the-technological-republic.html"}]}}]}
   </script>
   <style>
     :root {
@@ -58,8 +58,13 @@
       letter-spacing: -0.02em;
       margin: 0 0 0.5rem;
     }
+    .manifesto {
+      font-size: 1.08rem;
+      margin: 0 0 1rem;
+      max-width: 36rem;
+    }
     .lede {
-      font-size: 1.125rem;
+      font-size: 1.05rem;
       color: var(--muted);
       margin: 0 0 2rem;
     }
@@ -80,39 +85,112 @@
     ul { margin: 0 0 1rem; padding-left: 1.25rem; }
     li { margin: 0.35rem 0; }
     a { color: var(--accent); }
+    .how-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 1rem;
+    }
+    .how-list li {
+      margin: 0 0 0.85rem;
+      padding-left: 0;
+    }
+    .how-list strong {
+      display: block;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-family: system-ui, sans-serif;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+    .forthcoming-status {
+      font-family: system-ui, sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-left: 0.35rem;
+    }
     footer {
-      margin-top: 3rem;
+      margin-top: 2.5rem;
       font-size: 0.875rem;
       color: var(--muted);
     }
+    footer p { margin: 0.35rem 0; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Review</h1>
-    <p class="lede">
-      Long-form criticism from Castalia: several voices in dialogue on a single book—
-      with quoted passages and notes, and a published essay that brings the threads together.
+    <h1>Castalia Review</h1>
+    <p class="manifesto">
+      Most contemporary book discourse is too fast, too partisan, or too shallow for civilizational questions.
+      <strong>Castalia Review</strong> exists for the books that deserve slower judgment: polyphonic review essays in which several disciplined voices disagree in public—always tethered to the text.
     </p>
+    <p class="lede">
+      Each piece combines a framing overview, line-level marginalia on quoted passages, and a synthetic afterword (sometimes including a reply staged in the book’s own voice). Technology, politics, and culture are read as questions for the whole person—history, ethics, and imagination together.
+    </p>
+
+    <section>
+      <h2>How a Castalia Review works</h2>
+      <ul class="how-list">
+        <li>
+          <strong>1 · Overview essay</strong>
+          The custodian introduces the work and sets the stakes before the faculty sections open.
+        </li>
+        <li>
+          <strong>2 · Faculty marginalia</strong>
+          Named reviewers annotate the book passage by passage; superscripts in the essay jump to those notes.
+        </li>
+        <li>
+          <strong>3 · Synthesis and afterword</strong>
+          The voices converge or diverge openly; the afterword gathers threads or lets the book answer back.
+        </li>
+      </ul>
+      <p>
+        <a href="about.html">About the method</a> — editorial standards, the <em>in voce</em> convention, and custodian of record.
+      </p>
+    </section>
+
     <section>
       <h2>Essays</h2>
       <ul>
         <li>
           <a href="reviews/the-technological-republic.html"><cite>The Technological Republic</cite></a>
-          by Alex Karp and Nicholas W. Thompson — a joint review, with
-          <a href="reviews/the-technological-republic/marginalia/index.html">annotated quotations by voice</a>.
+          by Alex Karp and Nicholas W. Thompson — joint review with
+          <a href="reviews/the-technological-republic/marginalia/index.html">marginalia by reviewer</a>.
         </li>
       </ul>
     </section>
+
     <section>
-      <h2>About this series</h2>
+      <h2>Forthcoming</h2>
       <p>
-        Castalia’s reviews treat technology, politics, and culture as questions for the whole person—
-        history, ethics, and imagination read together. New titles appear here as they are finished.
+        Additional Castalia Reviews are in editorial preparation.
+        When a title is formally announced for the series, it will be listed here with its status.
+      </p>
+      <ul>
+        <li>Next reviews <span class="forthcoming-status">In preparation</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Castalia</h2>
+      <p>
+        Castalia Review is published by
+        <a href="https://castalia.institute/">Castalia Institute</a>
+        alongside
+        <a href="https://inquirer.castalia.institute/">The Inquirer</a>
+        and other programs for liberal inquiry.
       </p>
     </section>
+
     <footer>
-      <a href="https://castalia.institute/">Castalia Institute</a>
+      <p>
+        <a href="about.html">About the method</a>
+        · <a href="https://inquirer.castalia.institute/">The Inquirer</a>
+        · <a href="https://castalia.institute/">Castalia Institute</a>
+      </p>
     </footer>
   </main>
   <script src="/castalia-chrome/inject.js" defer></script>

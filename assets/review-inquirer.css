@@ -60,10 +60,45 @@ body.review-inquirer-page {
   text-decoration: underline;
 }
 
+.review-reading-guide {
+  margin: 0 0 1.75rem;
+  padding: 1rem 1.15rem 1.05rem;
+  background: rgba(44, 95, 124, 0.07);
+  border: 1px solid var(--review-border);
+  border-radius: 2px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--review-ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .review-reading-guide {
+    background: rgba(126, 184, 216, 0.08);
+  }
+}
+
+.review-reading-guide-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--review-muted);
+}
+
+.review-reading-guide-body {
+  margin: 0;
+}
+
+.review-reading-guide a {
+  color: var(--review-accent);
+}
+
 .review-article-header {
   border-bottom: 2px solid var(--review-accent);
   padding-bottom: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .review-article-header h1 {

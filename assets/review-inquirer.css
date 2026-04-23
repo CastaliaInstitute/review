@@ -272,6 +272,25 @@ body.review-inquirer-page {
   font-style: italic;
 }
 
+.review-main-body blockquote.review-pull-quote {
+  margin: 1.75rem 0 1.5rem;
+  padding: 1.1rem 1.25rem;
+  border-left: none;
+  border-top: 1px solid var(--review-border);
+  border-bottom: 1px solid var(--review-border);
+  background: transparent;
+  font-family: "EB Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--review-accent);
+  text-align: center;
+}
+
+.review-main-body blockquote.review-pull-quote p {
+  margin: 0;
+}
+
 .review-main-body ul,
 .review-main-body ol {
   margin: 0 0 1rem;

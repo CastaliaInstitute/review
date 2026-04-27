@@ -20,7 +20,7 @@ STORE="$(mkdir -p "$STORE" 2>/dev/null && cd "$STORE" && pwd || true)"
 
 usage() {
   echo "Usage: $0 <path-to-book> [-- npm run upload:local-epub args...]" >&2
-  echo "  Formats: .epub (or .mobi / .azw / .awz3 → EPUB via Calibre ebook-convert)" >&2
+  echo "  Formats: .epub (or .mobi / .azw / .azw3 → EPUB via Calibre ebook-convert)" >&2
   echo "  Each run copies the file under REVIEW_PRIVATE_BOOKS_DIR (default: $ROOT/../.castalia-review-private-books)" >&2
   echo "  then: cd to bibliotech and npm run upload:local-epub -- [args] <epub-path>." >&2
   echo "  BIBLIOTECH_ROOT, REVIEW_PRIVATE_BOOKS_DIR override locations." >&2

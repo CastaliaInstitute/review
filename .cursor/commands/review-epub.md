@@ -1,20 +1,20 @@
 ---
-description: "Full Castalia Review: EPUB + bibliotech, pick faculty (*in voce* voices), run review pipeline, export to this site"
+description: "Full Castalia Review: book file (EPUB/MOBI) + bibliotech, faculty, pipeline, export to this site"
 ---
 
-# Castalia Review — full faculty review (from EPUB)
+# Castalia Review — full faculty review (from a book file)
 
-The user wants to **set up a Castalia Review** of a book: not only uploading the source EPUB to **bibliotech** (`../bibliotech`), but moving through **faculty reviewer selection** and the steps that produce the static site in **this repo** (Castalia **Review** at `review.castalia.institute`).
+The user wants to **set up a Castalia Review** of a book: not only uploading the source file (EPUB, or **MOBI/AZW** after conversion) to **bibliotech** (`../bibliotech`), but moving through **faculty reviewer selection** and the steps that produce the static site in **this repo** (Castalia **Review** at `review.castalia.institute`).
 
 This **chains** with **`/add-epub`**: that command only runs `scripts/add-epub-to-bibliotech.sh`. This command is the **end-to-end** orchestration; run upload first if it has not been done.
 
-## 1) Source EPUB and bibliotech
+## 1) Source file and bibliotech
 
-- If the user **dragged** or **@**‑attached an EPUB, resolve the **real absolute path** and (unless they say upload is already done) run from the **review** repo root:
+- If the user **dragged** or **@**‑attached a book file, resolve the **real absolute path** and (unless they say upload is already done) run from the **review** repo root:
   ```bash
-  ./scripts/add-epub-to-bibliotech.sh "ABSOLUTE_PATH.epub" -- --review
+  ./scripts/add-epub-to-bibliotech.sh "ABSOLUTE_PATH" -- --review
   ```
-  Use `BIBLIOTECH_ROOT` if bibliotech is not at `../bibliotech` (see `add-epub` command or `scripts/add-epub-to-bibliotech.sh`).
+  The script **files a copy in the private store** and **converts** MOBI/AZW to EPUB with Calibre when needed. Use `BIBLIOTECH_ROOT` and `REVIEW_PRIVATE_BOOKS_DIR` if the defaults do not match their machine.
 
 - **Docs** (in bibliotech; follow current flags and steps there): *FACULTY_REVIEW_EPUBS* (Readest, non-public EPUBs), and **REVIEW_PIPELINE_CHAPTER_ASK_FACULTY** (the chapter ask-faculty pipeline). Point the user to those for authoritative CLI and env.
 
@@ -58,9 +58,9 @@ Adjust `../review` if the local clone of **Castalia Review** lives elsewhere. Re
 
 ## Summary for the user
 
-1. EPUB on disk + `./scripts/add-epub-to-bibliotech.sh … -- --review` when needed.  
+1. Book file on disk (see `/add-epub` for private store + MOBI→EPUB) + `./scripts/add-epub-to-bibliotech.sh … -- --review` when needed.  
 2. **Pick 3 (or 4) faculty** voices and slugs; align with the pipeline in bibliotech.  
 3. Run the **bibliotech** review pipeline; then **export marginalia** into `reviews/<slug>/marginalia`.  
 4. **Ship** from this **review** repo to GitHub Pages as usual.
 
-If the user has **not** attached an EPUB, ask for the file path, whether upload already ran, and the **bibliotech** and **book** context before running commands.
+If the user has **not** attached a file, ask for the path, whether upload already ran, and the **bibliotech** and **book** context before running commands.

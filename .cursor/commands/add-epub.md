@@ -8,9 +8,13 @@ The user has attached (dragged) a book file: **EPUB** or **MOBI / AZW3 / AZW** t
 
 The script **copies** the file into a **local private book store** (default `../.castalia-review-private-books/<import-id>/`; set `REVIEW_PRIVATE_BOOKS_DIR` to use e.g. `private/books`). It **converts** non-EPUB to EPUB with Calibre’s **`ebook-convert`** when needed (user must have Calibre installed and on `PATH`).
 
+## Remote or cloud agent
+
+If this chat runs in a **remote** or **cloud** environment, a path such as `/Users/...` on the user’s Mac does **not** exist in that environment. The agent must **not** claim the upload ran successfully without executing the script in a place that can read the file. Tell the user to open **Cursor’s integrated terminal on their own machine** (or any local shell), `cd` to the review repo, and run the one-liner under **Do this** with their path. Alternatively they can use **local** Agent mode in Cursor Desktop for the same repo.
+
 ## Do this
 
-1. **Resolve the file path** from the attachment or `@`-mentioned file. Use the **absolute path** on disk. If the path is unclear, ask for the exact path.
+1. **Resolve the file path** from the attachment or `@`-mentioned file. Use the **absolute path** on disk. If the path is unclear, or you cannot read that path in this environment, use **Remote or cloud agent** and give the user the exact copy-paste command.
 2. From the **review repo root**, run:
    - Default (review title upload to bibliotech):
      ```bash

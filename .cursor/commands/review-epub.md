@@ -8,9 +8,11 @@ The user wants to **set up a Castalia Review** of a book: not only uploading the
 
 This **chains** with **`/add-epub`**: that command only runs `scripts/add-epub-to-bibliotech.sh`. This command is the **end-to-end** orchestration; run upload first if it has not been done.
 
+If the agent runs in a **remote** environment, local macOS paths (e.g. `/Users/...`) are not readable there—point the user at **local terminal** for `add-epub-to-bibliotech.sh` (see `add-epub` command).
+
 ## 1) Source file and bibliotech
 
-- If the user **dragged** or **@**‑attached a book file, resolve the **real absolute path** and (unless they say upload is already done) run from the **review** repo root:
+- If the user **dragged** or **@**‑attached a book file, resolve the **real absolute path** and (unless they say upload is already done) run from the **review** repo root, **or** in a local terminal on their machine if the path only exists on their computer:
   ```bash
   ./scripts/add-epub-to-bibliotech.sh "ABSOLUTE_PATH" -- --review
   ```

@@ -22,3 +22,5 @@ The user has attached (dragged) an **EPUB** in this input and wants it added to 
 4. **Report** the script’s exit code and any relevant log lines. If npm or auth fails, help with env/credentials and retry only when appropriate.
 
 Do **not** invent paths; the EPUB the user attached is the source of truth.
+
+**Next (full Castalia Review):** For **faculty selection**, the **bibliotech** review pipeline, and **exporting marginalia** into this site repo, use the **`/review-epub`** command after a successful upload (or use `/review-epub` alone for end-to-end guidance).

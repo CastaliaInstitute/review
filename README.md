@@ -8,6 +8,8 @@ Non-public review EPUBs and the Readest import path are documented in the **bibl
 
 **Example title:** *The Technological Republic* (ISBN 9780593798706) — uploaded via `npm run upload:local-epub` with `--review`; deep link on the site under **Titles in review**.
 
+**Cursor:** After dragging an EPUB into the chat, use **`/add-epub`** to run the wrapper script, then **`/review-epub`** to walk through *in voce* faculty selection, the bibliotech review pipeline, and marginalia export into this repo. Commands live under `.cursor/commands/`.
+
 ## Marginalia pages (per reviewer)
 
 Static HTML under `reviews/<slug>/marginalia/` lists **book quotations** and each **reviewer’s comment** (from Supabase `marginalia`). Regenerate from the bibliotech repo after a pipeline run:

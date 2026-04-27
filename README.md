@@ -8,6 +8,10 @@ Non-public review EPUBs and the Readest import path are documented in the **bibl
 
 **Example title:** *The Technological Republic* (ISBN 9780593798706) — uploaded via `npm run upload:local-epub` with `--review`; deep link on the site under **Titles in review**.
 
+**Import script:** `scripts/add-epub-to-bibliotech.sh` copies each file into a **local private book store** (default `../.castalia-review-private-books/<timestamp-pid>/`; override with `REVIEW_PRIVATE_BOOKS_DIR`, e.g. `private/books` if you add that path to gitignore). It accepts **EPUB** or **MOBI / AZW / AZW3**; non-EPUB requires [Calibre](https://calibre-ebook.com)’s `ebook-convert` on your `PATH`, then runs `upload:local-epub` in `../bibliotech`.
+
+**Cursor:** After dragging a book file, use **`/add-epub`**, then **`/review-epub`** for the full *in voce* and pipeline. Commands live under `.cursor/commands/`.
+
 ## Marginalia pages (per reviewer)
 
 Static HTML under `reviews/<slug>/marginalia/` lists **book quotations** and each **reviewer’s comment** (from Supabase `marginalia`). Regenerate from the bibliotech repo after a pipeline run:
